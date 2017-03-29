@@ -1,0 +1,65 @@
+//
+//  PrefixHeader.pch
+//  SmallFeature
+//
+//  Created by Sun on 16/1/21.
+//  Copyright © 2016年 ssb. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef __OPTIMEZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#define VIEW_WIDTH      [UIScreen mainScreen].bounds.size.width
+#define VIEW_HEIGHT     [UIScreen mainScreen].bounds.size.height
+
+#import "SDCycleScrollView.h"
+
+#import "AFNetworking.h"
+
+#import "StockModel.h"
+
+#import "MJRefresh.h"
+
+#import "MBProgressHUD.h"
+
+#import <SMS_SDK/SMSSDK.h>
+
+#import "SCNavTabBarController.h"
+
+#import "UIImageView+WebCache.h"
+//color
+#define TABLEVIEWDEFAULTCOLOR  [UIColor colorWithRed:243.0/255 green:242.0/255 blue:248.0/255 alpha:1]
+#define TabBarTintColor [UIColor colorWithRed:202.0/255 green:9.0/255 blue:21.0/255 alpha:1]
+#define HOMEPAGETEXTCOLOR  [UIColor colorWithRed:150.0/255 green:150.0/255 blue:156.0/255 alpha:1]
+//实时资讯
+#define HotNews_Https @"http://topmaster.server.zznorth.com/api/content?a=query&type=news&page=%ld&pageSize=15"
+
+#define XXColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//版本
+#define iOS7   ([UIDevice currentDevice].systemVersion.floatValue>=7.0)
+
+#import "UIImage+Extend.h"
+
+//#define HttpAdress @"http://topmaster.server.zznorth.com"
+
+#define HttpAdress @"http://192.168.2.76:90"
+
+#define HTTP_TOPIC @""HttpAdress"/api/content?a=query&type=topic&page=%ld&pageSize=10"
+
+
+#define CELL_H 40
+
+
+#import "BaseViewController.h"
+
+#endif /* PrefixHeader_pch */

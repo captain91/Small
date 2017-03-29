@@ -8,7 +8,7 @@
 
 #import "ScrollViewController.h"
 
-#import "LiveViewController.h"
+#import "ThreadViewController.h"
 
 #import "ResearchViewController.h"
 

@@ -6,13 +6,13 @@
 //  Copyright © 2016年 ssb. All rights reserved.
 //
 
-#import "LiveViewController.h"
+#import "ThreadViewController.h"
 
-@interface LiveViewController ()
+@interface ThreadViewController ()
 
 @end
 
-@implementation LiveViewController{
+@implementation ThreadViewController{
     UIImageView *_imageView;
 }
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LiveViewController : BaseViewController
+@interface ThreadViewController : BaseViewController
 
 @end

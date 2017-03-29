@@ -47,7 +47,7 @@
 
 #import "CommentViewController.h"
 
-#import "LiveViewController.h"
+#import "ThreadViewController.h"
 
 #define BUTTONTO_X 100
 
@@ -132,7 +132,7 @@
                                                                 @"SubLBXScanViewController",@"GenerateQrCodeViewController",@"ApplePayViewController",
                                                                 @"BluetoothViewController",@"StockViewController",@"HouseLoanViewController",
                                                                 @"ScrollViewController",@"RealNewsViewController",@"ShareViewController",@"MapViewController",
-                                                                @"XXHomeViewController",@"TopicViewController",@"CommentViewController",@"LiveViewController",nil];
+                                                                @"XXHomeViewController",@"TopicViewController",@"CommentViewController",@"ThreadViewController",nil];
     
 }
 

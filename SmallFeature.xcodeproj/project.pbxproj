@@ -146,7 +146,7 @@
 		A440A5F41D911996005D48E3 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = A440A5F01D911996005D48E3 /* README.mdown */; };
 		A44A3B261D332635007B58B5 /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B251D332635007B58B5 /* SCNavTabBarController.m */; };
 		A44A3B2A1D3327D9007B58B5 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B291D3327D9007B58B5 /* ScrollViewController.m */; };
-		A44A3B311D332A19007B58B5 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B301D332A19007B58B5 /* LiveViewController.m */; };
+		A44A3B311D332A19007B58B5 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B301D332A19007B58B5 /* ThreadViewController.m */; };
 		A44A3B341D332B2C007B58B5 /* ResearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B331D332B2C007B58B5 /* ResearchViewController.m */; };
 		A44A3B371D332B4A007B58B5 /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B361D332B4A007B58B5 /* OperationViewController.m */; };
 		A44A3B3A1D332B81007B58B5 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44A3B391D332B81007B58B5 /* IntroductionViewController.m */; };
@@ -927,8 +927,8 @@
 		A44A3B271D33274B007B58B5 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		A44A3B281D3327D9007B58B5 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewController.h; path = ViewControllers/ScrollViewController.h; sourceTree = "<group>"; };
 		A44A3B291D3327D9007B58B5 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewController.m; path = ViewControllers/ScrollViewController.m; sourceTree = "<group>"; };
-		A44A3B2F1D332A19007B58B5 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveViewController.h; path = NextViewcontroller/LiveViewController.h; sourceTree = "<group>"; };
-		A44A3B301D332A19007B58B5 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiveViewController.m; path = NextViewcontroller/LiveViewController.m; sourceTree = "<group>"; };
+		A44A3B2F1D332A19007B58B5 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadViewController.h; path = NextViewcontroller/ThreadViewController.h; sourceTree = "<group>"; };
+		A44A3B301D332A19007B58B5 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadViewController.m; path = NextViewcontroller/ThreadViewController.m; sourceTree = "<group>"; };
 		A44A3B321D332B2C007B58B5 /* ResearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResearchViewController.h; path = NextViewcontroller/ResearchViewController.h; sourceTree = "<group>"; };
 		A44A3B331D332B2C007B58B5 /* ResearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResearchViewController.m; path = NextViewcontroller/ResearchViewController.m; sourceTree = "<group>"; };
 		A44A3B351D332B4A007B58B5 /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperationViewController.h; path = NextViewcontroller/OperationViewController.h; sourceTree = "<group>"; };
@@ -2450,8 +2450,8 @@
 				A45C433F1D545A0500338011 /* RealNews */,
 				A4A925971D79777E00301CFB /* MapViewController.h */,
 				A4A925981D79777E00301CFB /* MapViewController.m */,
-				A44A3B2F1D332A19007B58B5 /* LiveViewController.h */,
-				A44A3B301D332A19007B58B5 /* LiveViewController.m */,
+				A44A3B2F1D332A19007B58B5 /* ThreadViewController.h */,
+				A44A3B301D332A19007B58B5 /* ThreadViewController.m */,
 				A44A3B321D332B2C007B58B5 /* ResearchViewController.h */,
 				A44A3B331D332B2C007B58B5 /* ResearchViewController.m */,
 				A44A3B351D332B4A007B58B5 /* OperationViewController.h */,
@@ -4452,7 +4452,7 @@
 				A497C9971C7164E500469328 /* ZXModulusGF.m in Sources */,
 				A497C9411C7164E500469328 /* ZXLuminanceSource.m in Sources */,
 				A497C9221C7164E500469328 /* ZXImage.m in Sources */,
-				A44A3B311D332A19007B58B5 /* LiveViewController.m in Sources */,
+				A44A3B311D332A19007B58B5 /* ThreadViewController.m in Sources */,
 				A40656601D825C4500570CC9 /* NSObject+MJMember.m in Sources */,
 				A440A5D61D90CA81005D48E3 /* View+MASAdditions.m in Sources */,
 				A45C43451D545A9400338011 /* RealNewsTableViewCell.m in Sources */,

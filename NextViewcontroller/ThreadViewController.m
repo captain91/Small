@@ -104,4 +104,34 @@
         [self loadImage];
     });
 }
+
+
+//动态创建线程
+- (void)dynamicCreateThread {
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(loadImage) object:nil];
+    thread.threadPriority = 1;
+    [thread start];
+}
+//静态创建线程
+- (void)staticCreateThread {
+    [NSThread detachNewThreadWithBlock:^{
+        
+    }];
+}
+//隐式创建
+- (void)implicitCreateThread {
+    [self performSelectorInBackground:@selector(loadImage) withObject:nil];
+}
+-(void)loadImageSource:(NSString *)url {
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+    UIImage *image = [UIImage imageWithData:imageData];
+    if (imageData != nil) {
+        [self performSelectorOnMainThread:@selector(refreshImageView:) withObject:image waitUntilDone:YES];
+    }else{
+        NSLog(@"there no image data");
+    }
+}
+-(void)refreshImageView:(UIImage *)image {
+    _imageView.image = image;
+}
 @end

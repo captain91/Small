@@ -30,6 +30,7 @@
 #import "MJRefresh.h"
 
 #import "MBProgressHUD.h"
+#import "MBProgressHUD+NJ.h"
 
 #import <SMS_SDK/SMSSDK.h>
 

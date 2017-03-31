@@ -10,6 +10,8 @@
 
 #import "HealthKitViewController.h"
 
+#import "NetWorkViewController.h"
+
 @interface MoreViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -62,9 +64,9 @@
     
     [self.view addSubview:functionTableView];
     
-    functionTitleArray = [[NSMutableArray alloc]initWithObjects:@"读取步数",@"Socket",nil];
+    functionTitleArray = [[NSMutableArray alloc]initWithObjects:@"读取步数",@"网络",nil];
     
-    viewControllerArray = [[NSMutableArray alloc]initWithObjects:@"HealthKitViewController",@"HealthKitViewController",nil];
+    viewControllerArray = [[NSMutableArray alloc]initWithObjects:@"HealthKitViewController",@"NetWorkViewController",nil];
     
 }
 

@@ -537,6 +537,8 @@
 		A4A1AD1B1D8F74D50097B751 /* timeline_retweet_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A1ACC51D8F74D40097B751 /* timeline_retweet_background@2x.png */; };
 		A4A1AD1C1D8F74D50097B751 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A1ACC71D8F74D40097B751 /* Contents.json */; };
 		A4A1AD1D1D8F74D50097B751 /* timeline_retweet_background_os7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A1ACC81D8F74D40097B751 /* timeline_retweet_background_os7@2x.png */; };
+		A4A5996E1E8CEAC3003E419F /* NetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A5996D1E8CEAC3003E419F /* NetWorkViewController.m */; };
+		A4A599701E8CEB18003E419F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5996F1E8CEB18003E419F /* CoreTelephony.framework */; };
 		A4A899E31DC18DED00C71201 /* CommentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A899E21DC18DED00C71201 /* CommentFrame.m */; };
 		A4A925991D79777E00301CFB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A925981D79777E00301CFB /* MapViewController.m */; };
 		A4A9259B1D7979E100301CFB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A9259A1D7979E100301CFB /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -1628,6 +1630,9 @@
 		A4A1ACC51D8F74D40097B751 /* timeline_retweet_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline_retweet_background@2x.png"; sourceTree = "<group>"; };
 		A4A1ACC71D8F74D40097B751 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		A4A1ACC81D8F74D40097B751 /* timeline_retweet_background_os7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline_retweet_background_os7@2x.png"; sourceTree = "<group>"; };
+		A4A5996C1E8CEAC3003E419F /* NetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetWorkViewController.h; path = MoreViewController/NetWorkViewController.h; sourceTree = "<group>"; };
+		A4A5996D1E8CEAC3003E419F /* NetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetWorkViewController.m; path = MoreViewController/NetWorkViewController.m; sourceTree = "<group>"; };
+		A4A5996F1E8CEB18003E419F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A4A899E11DC18DED00C71201 /* CommentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentFrame.h; path = NextViewcontroller/Comment/CommentFrame.h; sourceTree = "<group>"; };
 		A4A899E21DC18DED00C71201 /* CommentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentFrame.m; path = NextViewcontroller/Comment/CommentFrame.m; sourceTree = "<group>"; };
 		A4A925971D79777E00301CFB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = NextViewcontroller/MapViewController.h; sourceTree = "<group>"; };
@@ -1797,6 +1802,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A599701E8CEB18003E419F /* CoreTelephony.framework in Frameworks */,
 				A429D5191DDBFDD0008899B2 /* PassKit.framework in Frameworks */,
 				A4A9259B1D7979E100301CFB /* MapKit.framework in Frameworks */,
 				A4F7B3891CACB65700CC93B7 /* libstdc++.tbd in Frameworks */,
@@ -2223,6 +2229,7 @@
 		A42F06B61C561FF500A17C87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4A5996F1E8CEB18003E419F /* CoreTelephony.framework */,
 				A48FA9B81E65749D000B3E49 /* HealthKit.framework */,
 				A429D5181DDBFDD0008899B2 /* PassKit.framework */,
 				A4A9259A1D7979E100301CFB /* MapKit.framework */,
@@ -2633,6 +2640,8 @@
 			children = (
 				A48FA9B51E65742C000B3E49 /* HealthKitViewController.h */,
 				A48FA9B61E65742C000B3E49 /* HealthKitViewController.m */,
+				A4A5996C1E8CEAC3003E419F /* NetWorkViewController.h */,
+				A4A5996D1E8CEAC3003E419F /* NetWorkViewController.m */,
 			);
 			name = MoreViewController;
 			sourceTree = "<group>";
@@ -4561,6 +4570,7 @@
 				A4C842721D9E4A0E0042A9AE /* KNPhotoBrowerNumView.m in Sources */,
 				A4A899E31DC18DED00C71201 /* CommentFrame.m in Sources */,
 				A497C98F1C7164E500469328 /* ZXUPCAReader.m in Sources */,
+				A4A5996E1E8CEAC3003E419F /* NetWorkViewController.m in Sources */,
 				A497C91C1C7164E500469328 /* ZXVINParsedResult.m in Sources */,
 				A497C9431C7164E500469328 /* ZXResult.m in Sources */,
 				A44A3B371D332B4A007B58B5 /* OperationViewController.m in Sources */,

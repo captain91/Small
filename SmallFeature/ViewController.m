@@ -218,8 +218,8 @@
 #pragma mark -对应事件实现
 //打电话
 - (void)callSomeBody{
-    //刘傻叉电话
-    NSMutableString *numberStr = [NSMutableString stringWithFormat:@"Tel:%@",@"13115713421"];
+    //电话
+    NSMutableString *numberStr = [NSMutableString stringWithFormat:@"Tel:%@",@"18837102961"];
     
     UIWebView *callWeb = [[UIWebView alloc]init];
     

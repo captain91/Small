@@ -113,12 +113,20 @@
 }
 
 
-//时间分发
+//事件分发
 - (void)functionCellSelectedIndex:(NSInteger )indexCell{
-    
-    UIViewController *sadVc = [NSClassFromString(viewControllerArray[indexCell]) new];
-    
-    [self.navigationController pushViewController:sadVc animated:YES];
+    __weak MoreViewController *weakSelf = self;
+    if (indexCell == 0) {
+        HealthKitViewController *hVc = [[HealthKitViewController alloc]init];
+        hVc.titleBlock = ^(NSString *title) {
+            weakSelf.title = title;
+        };
+        [self.navigationController pushViewController:hVc animated:YES];
+    }else {
+        UIViewController *sadVc = [NSClassFromString(viewControllerArray[indexCell]) new];
+        [self.navigationController pushViewController:sadVc animated:YES];
+    }
+
     
 }
 

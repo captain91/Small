@@ -20,6 +20,22 @@
     [super viewDidLoad];
     self.title = @"网络权限";
     
+    [self createUI];
+    //测试循环引用
+//    NSMutableArray *firstArray = [NSMutableArray array];
+//    NSMutableArray *secondArray = [NSMutableArray array];
+//    
+//    [firstArray addObject:secondArray];
+//    [secondArray addObject:firstArray];
+    
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+-(void)createUI {
     NSArray *btnTitleA = [NSArray arrayWithObjects:@"网络",@"跳转", nil];
     
     for (int i = 0; i< btnTitleA.count; i++) {
@@ -33,14 +49,8 @@
         button.tag = 100 + i;
         [self.view addSubview:button];
     }
-    // Do any additional setup after loading the view.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 -(void)buttonAction:(UIButton *)btn {
     switch (btn.tag - 100) {
         case 0:
@@ -56,6 +66,7 @@
 }
 #pragma mark - 检查网络权限
 -(void)checkNetWork {
+    
     CTCellularData *cellularData = [[CTCellularData alloc]init];
     cellularData.cellularDataRestrictionDidUpdateNotifier = ^(CTCellularDataRestrictedState state) {
         //获取网络状态

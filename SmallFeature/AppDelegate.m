@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "MoreViewController.h"
-
+#import "FirstOpenViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 @interface AppDelegate ()
 
@@ -24,18 +24,27 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    NSLog(@"%@",NSHomeDirectory());
-    
     //SMS_SDK
     [SMSSDK registerApp:@"111c6df00d508" withSecret:@"e45a5483b3f3d721b46cd77677ce3443"];
     
-    [self addViewController];
+    //判断是不是第一次打开APP
+    BOOL isFirstOpen = [[[NSUserDefaults standardUserDefaults] objectForKey:@"isFirstOpen"] boolValue];
+    if (!isFirstOpen) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"isFirstOpen"];
+        //第一次打开
+        FirstOpenViewController *firstVc = [FirstOpenViewController new];
+        //点击进入应用，block回调
+        __weak AppDelegate *weakSelf = self;
+        firstVc.enterAppBlock = ^{
+            [weakSelf addViewController];
+        };
+        self.window.rootViewController = firstVc;
+    }else {
+        [self addViewController];
+    }
     
     [self.window makeKeyAndVisible];
-
     return YES;
 }
 

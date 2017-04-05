@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^getTitleStr)(NSString *title);
+
 @interface HealthKitViewController : BaseViewController
+
+@property(nonatomic,copy)getTitleStr titleBlock;
 
 @end

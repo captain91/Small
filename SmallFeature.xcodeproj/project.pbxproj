@@ -155,10 +155,6 @@
 		A448ECF21E94CD1800C95FBD /* NavBar64.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECE51E94CD1800C95FBD /* NavBar64.png */; };
 		A448ECF31E94CD1800C95FBD /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECE71E94CD1800C95FBD /* home@2x.png */; };
 		A448ECF41E94CD1800C95FBD /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECE81E94CD1800C95FBD /* more@2x.png */; };
-		A448ECFC1E94CF1300C95FBD /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECF81E94CF1300C95FBD /* Default-568@2x.png */; };
-		A448ECFD1E94CF1300C95FBD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECF91E94CF1300C95FBD /* Default.png */; };
-		A448ECFE1E94CF1300C95FBD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECFA1E94CF1300C95FBD /* Default@2x.png */; };
-		A448ECFF1E94CF1300C95FBD /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A448ECFB1E94CF1300C95FBD /* Default@3x.png */; };
 		A448ED031E94D52600C95FBD /* FirstOpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A448ED021E94D52600C95FBD /* FirstOpenViewController.m */; };
 		A448ED061E94DA2200C95FBD /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A448ED051E94DA2200C95FBD /* qidong.mp4 */; };
 		A448ED091E94E65200C95FBD /* LYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A448ED081E94E65200C95FBD /* LYButton.m */; };
@@ -940,10 +936,6 @@
 		A448ECE51E94CD1800C95FBD /* NavBar64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBar64.png; sourceTree = "<group>"; };
 		A448ECE71E94CD1800C95FBD /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
 		A448ECE81E94CD1800C95FBD /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
-		A448ECF81E94CF1300C95FBD /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
-		A448ECF91E94CF1300C95FBD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		A448ECFA1E94CF1300C95FBD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		A448ECFB1E94CF1300C95FBD /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@3x.png"; sourceTree = "<group>"; };
 		A448ED011E94D52600C95FBD /* FirstOpenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstOpenViewController.h; path = FirstOpenVC/FirstOpenViewController.h; sourceTree = "<group>"; };
 		A448ED021E94D52600C95FBD /* FirstOpenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstOpenViewController.m; path = FirstOpenVC/FirstOpenViewController.m; sourceTree = "<group>"; };
 		A448ED051E94DA2200C95FBD /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
@@ -2475,17 +2467,6 @@
 				A448ECE81E94CD1800C95FBD /* more@2x.png */,
 			);
 			path = TabBarItem;
-			sourceTree = "<group>";
-		};
-		A448ECF71E94CF1200C95FBD /* LaunchScreen */ = {
-			isa = PBXGroup;
-			children = (
-				A448ECF81E94CF1300C95FBD /* Default-568@2x.png */,
-				A448ECF91E94CF1300C95FBD /* Default.png */,
-				A448ECFA1E94CF1300C95FBD /* Default@2x.png */,
-				A448ECFB1E94CF1300C95FBD /* Default@3x.png */,
-			);
-			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		A448ED001E94D4DF00C95FBD /* FirstOpenVC */ = {
@@ -4109,7 +4090,6 @@
 		A4E046771C50965200616760 /* PicResource */ = {
 			isa = PBXGroup;
 			children = (
-				A448ECF71E94CF1200C95FBD /* LaunchScreen */,
 				A448ECDA1E94CD1800C95FBD /* ApplePayLogo */,
 				A448ECDD1E94CD1800C95FBD /* Other */,
 				A448ECE61E94CD1800C95FBD /* TabBarItem */,
@@ -4371,7 +4351,6 @@
 				A4A1ACD41D8F74D40097B751 /* timeline_card_bottom_line.png in Resources */,
 				A4A1AD171D8F74D50097B751 /* Contents.json in Resources */,
 				A4A1ACCA1D8F74D40097B751 /* timeline_card_bottom_background.png in Resources */,
-				A448ECFD1E94CF1300C95FBD /* Default.png in Resources */,
 				A4A1ACD21D8F74D40097B751 /* timeline_card_bottom_background_os7@2x.png in Resources */,
 				A4A1AD131D8F74D50097B751 /* timeline_image_placeholder.png in Resources */,
 				A401582E1C5F478E000BB64F /* ZLPhotoLib.bundle in Resources */,
@@ -4382,7 +4361,6 @@
 				A440A5DA1D90CA81005D48E3 /* micro@2x.png in Resources */,
 				A4A1ACD11D8F74D40097B751 /* Contents.json in Resources */,
 				A4A1AD1C1D8F74D50097B751 /* Contents.json in Resources */,
-				A448ECFE1E94CF1300C95FBD /* Default@2x.png in Resources */,
 				A4A1ACED1D8F74D40097B751 /* timeline_card_top_background.png in Resources */,
 				A4A1AD151D8F74D50097B751 /* timeline_new_status_background.png in Resources */,
 				A4A1ACD01D8F74D40097B751 /* timeline_card_bottom_background_highlighted_os7@2x.png in Resources */,
@@ -4427,7 +4405,6 @@
 				A448ECF41E94CD1800C95FBD /* more@2x.png in Resources */,
 				A440A5D91D90CA81005D48E3 /* MessageDisplayKitString.strings in Resources */,
 				A440A5BC1D90CA81005D48E3 /* ImagesPicker.xcassets in Resources */,
-				A448ECFF1E94CF1300C95FBD /* Default@3x.png in Resources */,
 				A4A1ACD91D8F74D40097B751 /* Contents.json in Resources */,
 				A4CB2B261C9BC4E80062C5D5 /* StockViewController.xib in Resources */,
 				A4A1ACEF1D8F74D40097B751 /* Contents.json in Resources */,
@@ -4471,7 +4448,6 @@
 				A448ECF11E94CD1800C95FBD /* NavBar.png in Resources */,
 				A4A1AD0C1D8F74D40097B751 /* timeline_icon_unlike@2x.png in Resources */,
 				A4A1AD0E1D8F74D40097B751 /* timeline_icon_unlike_os7@2x.png in Resources */,
-				A448ECFC1E94CF1300C95FBD /* Default-568@2x.png in Resources */,
 				A4A1ACF41D8F74D40097B751 /* Contents.json in Resources */,
 				A42F06B21C55ABE600A17C87 /* CountdownViewController.xib in Resources */,
 				A4A1ACDE1D8F74D40097B751 /* timeline_card_leftbottom_highlighted.png in Resources */,

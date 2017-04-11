@@ -605,6 +605,8 @@
 		A4E716F11DD31CC100A9041E /* LWTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E716E81DD31CC100A9041E /* LWTextLayout.m */; };
 		A4E716F21DD31CC100A9041E /* LWTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E716EA1DD31CC100A9041E /* LWTextParser.m */; };
 		A4E8B6EC1CB3AFF300CF6B3C /* HouseLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E8B6EB1CB3AFF300CF6B3C /* HouseLoanViewController.m */; };
+		A4ECC3FB1E9780AB00DB3300 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECC3FA1E9780AB00DB3300 /* KVOViewController.m */; };
+		A4ECC3FF1E97810200DB3300 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ECC3FE1E97810200DB3300 /* PersonModel.m */; };
 		A4EDF3D01D9524BC00B75CAD /* LWActionSheetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDF3CD1D9524BC00B75CAD /* LWActionSheetTableViewCell.m */; };
 		A4EDF3D11D9524BC00B75CAD /* LWActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDF3CF1D9524BC00B75CAD /* LWActionSheetView.m */; };
 		A4EDF3D51D9527A000B75CAD /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EDF3D41D9527A000B75CAD /* UIImage+ImageEffects.m */; };
@@ -1762,6 +1764,10 @@
 		A4E716EA1DD31CC100A9041E /* LWTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWTextParser.m; sourceTree = "<group>"; };
 		A4E8B6EA1CB3AFF300CF6B3C /* HouseLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HouseLoanViewController.h; path = ViewControllers/HouseLoanViewController.h; sourceTree = "<group>"; };
 		A4E8B6EB1CB3AFF300CF6B3C /* HouseLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HouseLoanViewController.m; path = ViewControllers/HouseLoanViewController.m; sourceTree = "<group>"; };
+		A4ECC3F91E9780AB00DB3300 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVOViewController.h; path = MoreViewController/KVOViewController.h; sourceTree = "<group>"; };
+		A4ECC3FA1E9780AB00DB3300 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVOViewController.m; path = MoreViewController/KVOViewController.m; sourceTree = "<group>"; };
+		A4ECC3FD1E97810200DB3300 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonModel.h; path = DataModel/PersonModel.h; sourceTree = "<group>"; };
+		A4ECC3FE1E97810200DB3300 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonModel.m; path = DataModel/PersonModel.m; sourceTree = "<group>"; };
 		A4EDF3CC1D9524BC00B75CAD /* LWActionSheetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWActionSheetTableViewCell.h; sourceTree = "<group>"; };
 		A4EDF3CD1D9524BC00B75CAD /* LWActionSheetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWActionSheetTableViewCell.m; sourceTree = "<group>"; };
 		A4EDF3CE1D9524BC00B75CAD /* LWActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWActionSheetView.h; sourceTree = "<group>"; };
@@ -2603,6 +2609,8 @@
 		A44C4E431C9BF5EC00DA63F3 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				A4ECC3FD1E97810200DB3300 /* PersonModel.h */,
+				A4ECC3FE1E97810200DB3300 /* PersonModel.m */,
 				A44C4E441C9BF6DF00DA63F3 /* StockModel.h */,
 				A44C4E451C9BF6DF00DA63F3 /* StockModel.m */,
 			);
@@ -2699,6 +2707,8 @@
 				A48FA9B61E65742C000B3E49 /* HealthKitViewController.m */,
 				A4A5996C1E8CEAC3003E419F /* NetWorkViewController.h */,
 				A4A5996D1E8CEAC3003E419F /* NetWorkViewController.m */,
+				A4ECC3F91E9780AB00DB3300 /* KVOViewController.h */,
+				A4ECC3FA1E9780AB00DB3300 /* KVOViewController.m */,
 			);
 			name = MoreViewController;
 			sourceTree = "<group>";
@@ -4550,6 +4560,7 @@
 				A44C4E381C9BDF0100DA63F3 /* AFURLResponseSerialization.m in Sources */,
 				A40656B81D879AF700570CC9 /* XXPhoto.m in Sources */,
 				A497C6F61C7161C000469328 /* LBXScanViewController.m in Sources */,
+				A4ECC3FF1E97810200DB3300 /* PersonModel.m in Sources */,
 				A406565A1D825C4500570CC9 /* MJMember.m in Sources */,
 				A440A5CA1D90CA81005D48E3 /* KKVoiceRecordHelper.m in Sources */,
 				A448ED031E94D52600C95FBD /* FirstOpenViewController.m in Sources */,
@@ -4876,6 +4887,7 @@
 				A45C43481D545F5200338011 /* MyTableViewController.m in Sources */,
 				A497C9591C7164E500469328 /* ZXDataMatrixWriter.m in Sources */,
 				A497C9121C7164E500469328 /* ZXSMSTOMMSTOResultParser.m in Sources */,
+				A4ECC3FB1E9780AB00DB3300 /* KVOViewController.m in Sources */,
 				A497C9B81C7164E500469328 /* ZXQRCodeMode.m in Sources */,
 				A4E046261C5073D100616760 /* main.m in Sources */,
 				A497C9331C7164E500469328 /* ZXGlobalHistogramBinarizer.m in Sources */,

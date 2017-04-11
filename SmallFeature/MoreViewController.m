@@ -12,6 +12,8 @@
 
 #import "NetWorkViewController.h"
 
+#import "KVOViewController.h"
+
 @interface MoreViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -64,9 +66,9 @@
     
     [self.view addSubview:functionTableView];
     
-    functionTitleArray = [[NSMutableArray alloc]initWithObjects:@"读取步数",@"网络",nil];
+    functionTitleArray = [[NSMutableArray alloc]initWithObjects:@"读取步数",@"网络",@"KVO",nil];
     
-    viewControllerArray = [[NSMutableArray alloc]initWithObjects:@"HealthKitViewController",@"NetWorkViewController",nil];
+    viewControllerArray = [[NSMutableArray alloc]initWithObjects:@"HealthKitViewController",@"NetWorkViewController",@"KVOViewController",nil];
     
 }
 
